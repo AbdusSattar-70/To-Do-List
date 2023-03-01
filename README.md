@@ -72,7 +72,7 @@ and it is a simple website that displays a list of To do tasks and allows you to
 
 ## 🚀 Live Demo<a name="live-demo"></a>
 
-- [Live Demo Link](https://abdussattar-70.github.io/To-Do-List/)
+- [Live Demo Link](https://abdussattar-70.github.io/To-Do-List/dist/index.html)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -130,9 +130,7 @@ You can deploy this project using:
 
 ## 👥 Authors <a name="authors"></a>
 
-👤 **Author**
-
-## [Abdus Sattar]
+## 👤 Abdus Sattar
 
 - GitHub: [@githubhandle](https://github.com/AbdusSattar-70)
 - Twitter: [@twitterhandle](twitter.com/Abdus_Sattar70)
