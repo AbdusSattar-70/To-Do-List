@@ -48,23 +48,27 @@ class DataCollection {
          this.checkBox();
        };
 
-        updateCompletedStatus = (index, completed) => {
-          this.data[index].completed = completed;
-          this.save();
-        }
+ updateCompletedStatus = (index, completed) => {
+   this.data[index].completed = completed;
+   localStorage.setItem(`item-${index}-completed`, completed);
+   this.save();
+ }
 
 checkBox = () => {
   const checks = document.querySelectorAll('input[type=checkbox]');
   const inputs = document.querySelectorAll('.textareaContainer textarea');
   checks.forEach((ck, i) => {
+    const isCompleted = this.data[i].completed;
+    if (isCompleted) {
+      inputs[i].classList.add('completed');
+      checks[i].setAttribute('checked', 'checked');
+    }
     ck.addEventListener('change', () => {
       if (checks[i].checked) {
-        inputs[i].style.textDecoration = 'line-through';
-        inputs[i].style.color = 'grey';
+        inputs[i].classList.add('completed');
         this.updateCompletedStatus(i, true);
       } else {
-        inputs[i].style.textDecoration = 'none';
-        inputs[i].style.color = 'black';
+        inputs[i].classList.remove('completed');
         this.updateCompletedStatus(i, false);
       }
     });

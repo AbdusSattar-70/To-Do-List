@@ -90,3 +90,8 @@ hr {
   gap: 15px;
   margin-right: 2rem;
 }
+
+.completed {
+  text-decoration: line-through;
+  color: gray;
+}
