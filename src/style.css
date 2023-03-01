@@ -95,3 +95,19 @@ hr {
   text-decoration: line-through;
   color: gray;
 }
+
+.refresh {
+  animation: rotate 0.1s ease-out;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+    color: red;
+  }
+
+  100% {
+    transform: rotate(360deg);
+    color: aqua;
+  }
+}
