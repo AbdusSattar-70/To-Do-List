@@ -101,11 +101,14 @@ checkBox = () => {
    });
  }
 
-         deleteItem= (i) => {
-           this.data = this.data.filter((item, index) => index !== i);
-           this.save();
-           this.displayToDoList();
-         }
+     deleteItem = (i) => {
+       this.data = this.data.filter((item, index) => index !== i);
+       this.data.forEach((item, index) => {
+         item.index = index + 1;
+       });
+       this.save();
+       this.displayToDoList();
+     }
 
      DeleteListeners= () => {
        const deleteBtn = document.querySelectorAll('.deleteBtn');
@@ -114,16 +117,16 @@ checkBox = () => {
        });
      }
 
-        save = () => {
-          localStorage.setItem('toDoList', JSON.stringify(this.data));
-        }
+ save = () => {
+   localStorage.setItem('toDoList', JSON.stringify(this.data));
+ }
 
-    load = () => {
-      const getDataFromLocal = JSON.parse(localStorage.getItem('toDoList')) || [];
-      getDataFromLocal.forEach((toDoList) => {
-        this.data.push(new Main(toDoList.task, toDoList.index, toDoList.completed));
-      });
-    }
+ load = () => {
+   const getDataFromLocal = JSON.parse(localStorage.getItem('toDoList')) || [];
+   getDataFromLocal.forEach((toDoList) => {
+     this.data.push(new Main(toDoList.task, toDoList.index, toDoList.completed));
+   });
+ }
 }
 
 const dataCollection = new DataCollection();
