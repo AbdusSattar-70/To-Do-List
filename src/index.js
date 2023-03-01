@@ -34,3 +34,8 @@ clearBtn.addEventListener('click', () => {
   localStorage.setItem('toDoList', JSON.stringify(updateList));
   dataCollection.displayToDoList();
 });
+
+document.querySelector('.fa-refresh').addEventListener('click', () => {
+  window.location.reload();
+  document.querySelector('.fa-refresh').classList.add('refresh');
+});
