@@ -130,9 +130,7 @@ You can deploy this project using:
 
 ## 👥 Authors <a name="authors"></a>
 
-👤 **Author**
-
-## [Abdus Sattar]
+## 👤 Abdus Sattar
 
 - GitHub: [@githubhandle](https://github.com/AbdusSattar-70)
 - Twitter: [@twitterhandle](twitter.com/Abdus_Sattar70)
