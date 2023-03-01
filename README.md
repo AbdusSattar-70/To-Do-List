@@ -37,7 +37,7 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Awesome book] <a name="about-project"></a>
+# 📖 [To-Do-List] <a name="about-project"></a>
 
 **[To Do List]** is my demo project for learning ES6 modules and webpack
 and it is a simple website that displays a list of To do tasks and allows you to add and remove tasks from that list.
@@ -131,6 +131,8 @@ You can deploy this project using:
 ## 👥 Authors <a name="authors"></a>
 
 👤 **Author**
+
+## [Abdus Sattar]
 
 - GitHub: [@githubhandle](https://github.com/AbdusSattar-70)
 - Twitter: [@twitterhandle](twitter.com/Abdus_Sattar70)

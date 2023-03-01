@@ -46,7 +46,7 @@ textarea {
   height: 3.5rem;
 }
 
-.clearTaskBtn {
+.clearCompleted {
   width: 100%;
   height: 3.5rem;
   font-size: 1.5rem;
@@ -54,15 +54,21 @@ textarea {
   cursor: pointer;
 }
 
+.enterBtn {
+  border: none;
+  background-color: white;
+}
+
 #inputField {
+  padding: 0.5rem;
+  width: 66rem;
   border: none;
   height: 3.5rem;
   font-size: 1rem;
   font-style: italic;
 }
 
-h1,
-#inputField {
+h1 {
   width: 100%;
 }
 
@@ -80,4 +86,7 @@ hr {
 
 .controller {
   display: none;
+  flex-direction: row-reverse;
+  gap: 15px;
+  margin-right: 2rem;
 }
