@@ -54,6 +54,10 @@ textarea {
   cursor: pointer;
 }
 
+.clearCompleted:focus {
+  background-color: rgba(0, 255, 255, 0.153);
+}
+
 .enterBtn {
   border: none;
   background-color: white;
