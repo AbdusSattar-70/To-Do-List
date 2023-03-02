@@ -49,7 +49,6 @@ export default class DataCollection {
 
  updateCompletedStatus = (index, completed) => {
    this.data[index].completed = completed;
-   localStorage.setItem(`item-${index}-completed`, completed);
    this.save();
  }
 

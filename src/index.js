@@ -26,10 +26,16 @@ clearBtn.addEventListener('click', () => {
   const updateItem = [];
   checks.forEach((checkbox, i) => {
     if (checkbox.checked) {
+      dataCollection.data.forEach((item, index) => {
+        item.index = index;
+      });
       updateItem.push(i);
     }
   });
   const updateList = dataCollection.data.filter((item, i) => !updateItem.includes(i));
+  updateList.forEach((item, index) => {
+    item.index = index;
+  });
   dataCollection.data = updateList;
   localStorage.setItem('toDoList', JSON.stringify(updateList));
   dataCollection.displayToDoList();
