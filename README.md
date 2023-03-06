@@ -1,17 +1,5 @@
 # To Do List
 
-<a name="readme-top"></a>
-
-<div align="center">
- <h3><b>To Do List is my demo project for learning ES6 modules and webpack
- and it is a simple website that displays a list of To do tasks and allows you to add and remove tasks from that list.</b></h3>
-
-</div>
-
-<div align="center">
-
-</div>
-
 <!-- TABLE OF CONTENTS -->
 
 # 📗 Table of Contents
