@@ -26,7 +26,7 @@ body {
 }
 
 .mainTitleContainer,
-.inputDiv,
+.form,
 .textareaContainer {
   display: flex;
   justify-content: space-between;
